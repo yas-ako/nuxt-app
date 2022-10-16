@@ -10,7 +10,7 @@ fetchArticle(+id);
     <article v-if="article">
       <p>タイトル：{{ article.title }}</p>
       <hr />
-      <div style="width: 500px">{{ article.content }}</div>
+      <div>{{ article.content }}</div>
     </article>
     <NuxtLink to="/">戻る</NuxtLink>
     <!-- ↓追加 -->

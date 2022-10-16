@@ -1,11 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;900&display=swap');
+
+h1{
+  font-size: 23px;
+  font-weight: normal;
+  border-bottom: #293d8b solid 2px;
+  margin: 8px 0 15px 0;
+  text-align: center;
+  /* padding: 5px; */
+}
+
+h2{
+  margin: 10px 0 7px 0;
+  font-size: 18px;
+  font-weight: normal;
+  border-left: #293d8b solid 5px;
+  padding: 5px 10px;
+}
+
+
+
 html {
   background-color: #f2f3f7;
+  word-wrap: break-word;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
 }
+
+
+ol,
+ul {
+  padding: 15px;
+  margin: 15px;
+}
+
+
+main {
+  flex: 1;
+}
+
+/* main>div {
+  height: 100%;
+} */
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 a:visited {
   color: inherit
 }
+
+.description{
+  margin: 10px;
+  padding: 5px;
+  /* border: #293d8b solid 1px; */
+  font-size: 14px;
+  color: #676767;
+}
+
+p{
+  padding: 8px 0 10px 0;
+}
+/* @media (min-width: 520px) {}
+
+@media (min-width: 960px) {} */

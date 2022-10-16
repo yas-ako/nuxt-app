@@ -1,32 +1,38 @@
 <template>
-  <div>
+  <div class="wrapper">
     <TheHeader />
-    <div class="container">
+    <main class="container">
       <slot />
-    </div>
+    </main>
     <TheFotter></TheFotter>
   </div>
 </template>
 
 <style scoped>
-footer {
-  margin-top: 2rem;
-  background-color: #ffffff;
-  padding: 1rem;
-}
-
-.container {
-  margin: 2rem;
-}
-
-/*
-body {
+.wrapper {
+  /* margin: 2rem; */
   display: flex;
   flex-flow: column;
   min-height: 100vh;
+  min-height: 100dvh;
 }
-main {
-  flex: 1;
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  width: 85%;
 }
-*/
+
+
+@media (min-width: 520px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    width: 894px;
+  }
+}
 </style>

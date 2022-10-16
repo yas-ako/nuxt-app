@@ -5,7 +5,7 @@
         <p class="subheading">記念祭について</p>
         <ul class="children">
           <li>
-            <NuxtLink to="/what's-the-kinensai">記念祭とは</NuxtLink>
+            <NuxtLink to="/about/">記念祭とは</NuxtLink>
           </li>
           <li>幹部とは</li>
           <li>会計のしくみ</li>

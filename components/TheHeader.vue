@@ -4,12 +4,26 @@
 
 <template>
   <header>
-    ヘッダ
+    <div class="container">
+      <NuxtLink to="/">第75th記念祭</NuxtLink>
+    </div>
   </header>
 </template>
 
-<style>
+<style scoped>
 header {
-  background-color:rgb(252, 180, 180)
+  color: #454545;
+  padding: 15px 10px;
+  background: #fff;
+  font-size: 30px;
 }
+
+.container{
+  max-width: 900px;
+  margin: auto;
+}
+
+
+
+
 </style>

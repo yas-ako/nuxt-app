@@ -5,7 +5,7 @@ fetchArticles();
 
 <template>
   <div>
-    <p>新着記事！！</p>
+    <h1>新着記事</h1>
     <ul>
       <li v-for="article in articles" :key="article.id">
         <NuxtLink :to="{path: '/details', query: { id:article.id }}">{{

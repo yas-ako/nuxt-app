@@ -4,7 +4,7 @@ html {
   box-sizing: border-box;
   -moz-tab-size: 4;
   tab-size: 4;
-  word-break: normal;
+  /* word-break: normal; */
 }
 
 *,

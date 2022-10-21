@@ -9,6 +9,9 @@
           </li>
           <li>幹部とは</li>
           <li>会計のしくみ</li>
+          <li>
+            <NuxtLink to="/news/"> お知らせ</NuxtLink>
+          </li>
         </ul>
       </div>
 
@@ -41,7 +44,7 @@ footer {
   height: 100lvh;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   /* font-size: 4vw; */
 }
 

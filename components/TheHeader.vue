@@ -16,6 +16,7 @@ header {
   padding: 15px 10px;
   background: #fff;
   font-size: 30px;
+  font-weight: 500;
 }
 
 .container{

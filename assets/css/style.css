@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;500;600;700;900&display=swap');
 
-h1 {
+.title {
   font-size: 26px;
-  font-weight: normal;
-  border-bottom: #293d8b solid 4px;
-  margin: 8px 0 15px 0;
+  font-weight: 600;
+  /* border-bottom: #293d8b solid 4px; */
+  margin: 8px 0 0 0;
   text-align: center;
+  /* color: #293d8b; */
   /* padding: 5px; */
 }
 
-h2 {
+.subtitle {
   margin: 10px 0 7px 0;
   font-size: 18px;
   font-weight: normal;

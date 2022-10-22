@@ -6,7 +6,7 @@ const { data: posts } = await useFetch("/api/newsList")
 
 <template>
   <div>
-    <h1>お知らせ</h1>
+    <h1 class="title">お知らせ</h1>
     <div class="divider">
       <section class="container">
         <!-- 記事一覧 -->

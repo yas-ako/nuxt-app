@@ -8,33 +8,37 @@ const props = defineProps({
   <div class="contents">
     <div class="article" v-for="post in posts.contents" :key="post.id">
       <div class="details">
-        <nuxt-link :to="`/news/${post.id}`">
-          <div class="title">
+        <nuxt-link :to="`/news/${post.id}/`">
+          <div class="news-title">
             {{ post.title }}
           </div>
         </nuxt-link>
         <div class="times gray small">
-          <div class="time"> {{ $formatDate(post.publishedAt) }}</div>
-          <div class="time"> {{ $formatDate(post.revisedAt) }}</div>
+          <!-- <div class="time"> <img class="svg" src="~assets/img/pencil.svg" /> {{ $formatDate(post.publishedAt) }}</div> -->
+          <!-- <div class="time" v-if="$formatDate(post.publishedAt)!=$formatDate(post.revisedAt)"> <img class="svg" src="~assets/img/reload.svg" /> {{ $formatDate(post.revisedAt) }}</div> -->
+          <!-- <div class="time"> <img class="svg" src="~assets/img/pencil.svg" /> {{ $formatDate(post.publishedAt) }}</div> -->
+          <div class="time"> <img class="svg" src="~assets/img/clock.svg" /> {{ $formatDate(post.revisedAt) }}</div>
         </div>
       </div>
-      <div class="article_fotter">
+      <div class=" article_fotter">
         <div class="tags">
           <div class="tag small" v-for="tag in post.tag" :key="tag.id">{{ tag.name }} </div>
         </div>
-        <span class="writer gray small">{{ post.writer.name}}</span>
+        <div class="writer gray small">{{ post.writer.name}}</div>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-.gray{
+.gray {
   color: #888;
 }
-.small{
+
+.small {
   font-size: 15px;
 }
+
 .contents {
   display: grid;
   gap: 18px;
@@ -43,14 +47,17 @@ const props = defineProps({
 .article {
   /* background-color: #e8eaf0; */
   background-color: #fff;
+  padding: 10px;
 }
 
 .details {
   display: flex;
+  margin-bottom: 3px;
+  justify-content: space-between;
 }
 
-.title {
-  margin: 5px 0 2px 5px;
+.news-title {
+  margin: 0 0 2px 5px;
   font-size: 20px;
   word-break: break-all;
 }
@@ -60,7 +67,7 @@ const props = defineProps({
 }
 
 .time {
-  width: 125px;
+  width: max-content;
 }
 
 .article_fotter {
@@ -68,16 +75,26 @@ const props = defineProps({
 }
 
 .tag {
-  margin-right: 5px;
+  margin: 0 5px 5px 0;
   /* word-break: break-all; */
   /* white-space: normal; */
+  padding: 2px;
+  border: #5d67bc solid 1px;
+  border-radius: 3px;
+  background-color: #5d67bc;
+  color: #f2f3f7;
 }
+
 
 .tags {
   display: inline-flex;
   flex-wrap: wrap;
   flex-direction: row;
   /* word-break:keep-all */
+}
+
+.svg {
+  width: 14px;
 }
 
 /* .article { */
